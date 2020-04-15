@@ -1,24 +1,24 @@
 import React, {useState} from 'react';
-import {BoilingVerdict} from "../BoilingVerdict/BoilingVerdict";
 
 export const scaleNames = {
-    c: 'Celsius',
-    f: 'Fahrenheit'
+    'c': 'Celsius',
+    'f': 'Fahrenheit'
 };
-type Props = {}
+type Props = {onTemperatureChange: (temp: number) => void,
+    temperature: string | number
+                scale: string}
 
 
-export function TemperatureInput() {
- const [temperature, setTemperature] = useState(0);
-
+export function TemperatureInput(props: Props) {
+ const handleChange = (e: any) => {
+     props.onTemperatureChange(e.target.value)
+ }
 return ((
     <fieldset>
-        <legend>Enter temperature in Celsius:</legend>
+        <legend>Enter temperature in {props.scale}:</legend>
         <input
-            value={temperature}
-            onChange={e => setTemperature(parseInt(e.target.value))} />
-        <BoilingVerdict
-            celsius={temperature} />
+            value={props.temperature}
+            onChange={e => handleChange(e)} />
     </fieldset>
 ))
 }

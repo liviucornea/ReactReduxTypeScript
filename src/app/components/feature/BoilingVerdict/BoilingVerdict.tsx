@@ -1,6 +1,7 @@
 import React  from 'react';
-
 type Props = {celsius: number}
+
+
 export function BoilingVerdict(props: Props) {
     if (props.celsius >= 100) {
         return <p>The water would boil.</p>;
