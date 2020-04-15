@@ -6,12 +6,12 @@ import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-///import {Route, BrowserRouter as Router, Switch} from "react-router";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import {Home} from "./app/components/home/Home";
 import {Counter} from "./features/counter/Counter";
 import {User} from "./features/user/User";
 import {Footer} from "./app/components/footer/Footer";
+import {Feature} from "./app/components/feature/Feature";
 
 
 ReactDOM.render(
@@ -27,6 +27,9 @@ ReactDOM.render(
                 </Route>
                 <Route path="/counter">
                     <Counter />
+                </Route>
+                <Route path="/features">
+                    <Feature />
                 </Route>
                 <Route path="/user">
                     <User />
