@@ -1,6 +1,6 @@
 import React , { useRef }  from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {logIn, selectUser, UserState} from "./userSlice";
+import {logIn, selectUser} from "./userSlice";
 import { useHistory } from "react-router-dom";
 import {UserModel} from "../models/UserModel";
 

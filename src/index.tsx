@@ -6,12 +6,34 @@ import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
+///import {Route, BrowserRouter as Router, Switch} from "react-router";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {Home} from "./app/components/home/Home";
+import {Counter} from "./features/counter/Counter";
+import {User} from "./features/user/User";
+import {Footer} from "./app/components/footer/Footer";
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+        <Router>
+            <App/>
+            {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+            <Switch>
+                <Route path="/home">
+                    <Home />
+                </Route>
+                <Route path="/counter">
+                    <Counter />
+                </Route>
+                <Route path="/user">
+                    <User />
+                </Route>
+            </Switch>
+            <Footer />
+        </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
