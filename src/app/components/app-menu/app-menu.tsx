@@ -17,6 +17,7 @@ export default function AppMenu() {
                     <Link className="nav-item nav-link active" to="/features">Features</Link>
                     <Link className="nav-item nav-link active" to="/counter">Counter</Link>
                     <Link className="nav-item nav-link active" to="/user">User</Link>
+                    <Link className="nav-item nav-link active" to="/entryForm">Form Validation</Link>
                     <a className="nav-item nav-link disabled" href="!#" aria-disabled="true">Disabled</a>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {BoilingVerdict} from "../BoilingVerdict/BoilingVerdict";
+import {BoilingVerdict} from "../TemperatureInput/BoilingVerdict/BoilingVerdict";
 import {TemperatureInput} from "../TemperatureInput/TemperatureInput";
 
 export default function Calculator() {
-    const [temperature, setTemperature] = useState(0);
+    const [temperature, setTemperature] = useState(99);
     const [scale, setScale] = useState('c');
 
    const handleCelsiusChange = (temperature: number) =>  {

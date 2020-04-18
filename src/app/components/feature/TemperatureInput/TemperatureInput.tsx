@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
+interface scaleTemp {
+    c: string;
+    f: string;
+    [key: string] : string;
+}
 
-export const scaleNames = {
+export const scaleNames: scaleTemp = {
     'c': 'Celsius',
     'f': 'Fahrenheit'
 };
@@ -15,7 +20,7 @@ export function TemperatureInput(props: Props) {
  }
 return ((
     <fieldset>
-        <legend>Enter temperature in {props.scale}:</legend>
+        <legend>Enter temperature in {scaleNames[props.scale]}:</legend>
         <input
             value={props.temperature}
             onChange={e => handleChange(e)} />

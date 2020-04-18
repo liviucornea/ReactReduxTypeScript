@@ -2,16 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { store } from './app/store';
-import { Provider } from 'react-redux';
+import {store} from './app/store';
+import {Provider} from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {Home} from "./app/components/home/Home";
 import {Counter} from "./features/counter/Counter";
 import {User} from "./features/user/User";
 import {Footer} from "./app/components/footer/Footer";
 import {Feature} from "./app/components/feature/Feature";
+import {EntryForm} from "./app/components/EntryForm/EntryForm";
 
 
 ReactDOM.render(
@@ -33,6 +34,9 @@ ReactDOM.render(
                 </Route>
                 <Route path="/user">
                     <User />
+                </Route>
+                <Route path="/entryForm">
+                    <EntryForm />
                 </Route>
             </Switch>
             <Footer />
