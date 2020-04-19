@@ -23,8 +23,10 @@ export function User() {
         if(passwordEl && passwordEl.current){
             userEntered.password = passwordEl.current.value;
         }
-
-        dispatch(logIn(userEntered));
+        /// strange TO DO if you don't dispatch it serialized that it complains...
+        // A non-serializable value was detected in an action
+        dispatch(logIn(JSON.parse(JSON.stringify(userEntered))));
+        // dispatch(logIn(userEntered));
         history.push("/home");
     }
     return (

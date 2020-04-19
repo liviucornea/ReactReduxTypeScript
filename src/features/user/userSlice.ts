@@ -1,4 +1,4 @@
-import {createSlice} from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {AppThunk, RootState} from "../../app/store";
 
 export interface UserState {
@@ -20,7 +20,7 @@ export const userSlice = createSlice({
     name: 'user',
     initialState: initialUserState,
     reducers: {
-        logIn: (state, action) => {
+        logIn: (state, action: PayloadAction<UserState>) => {
             // Redux Toolkit allows us to write "mutating" logic in reducers. It
             // doesn't actually mutate the state because it uses the Immer library,
             // which detects changes to a "draft state" and produces a brand new

@@ -36,7 +36,7 @@ ReactDOM.render(
                     <User />
                 </Route>
                 <Route path="/entryForm">
-                    <EntryForm />
+                    <EntryForm formName='Liviu Cornea' />
                 </Route>
             </Switch>
             <Footer />
