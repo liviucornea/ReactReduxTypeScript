@@ -28,7 +28,7 @@ export default function Calculator() {
                 temperature={fahrenheit}
                 onTemperatureChange={handleFahrenheitChange} />
                 <BoilingVerdict
-                    celsius={temperature} />
+                    celsius={parseFloat(celsius.toString())} />
         </div>
         );
 }

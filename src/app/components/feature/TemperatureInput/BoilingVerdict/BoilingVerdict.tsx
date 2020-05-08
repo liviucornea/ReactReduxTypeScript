@@ -1,5 +1,5 @@
 import React  from 'react';
-type Props = {celsius: number}
+type Props = {celsius: number | string}
 
 
 export function BoilingVerdict(props: Props) {
