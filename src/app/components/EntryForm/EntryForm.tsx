@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {ParentForm} from "./ParentForm/ParentForm";
 import * as _ from 'lodash';
-import {compose , pipe} from 'lodash/fp'
-
+// import {compose , pipe} from 'lodash/fp'
 
 type Props = { formName: string }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
+import   './_app-menu.scss';
 
 export default function AppMenu() {
     return (
@@ -13,12 +13,12 @@ export default function AppMenu() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <Link className="nav-item nav-link active" to="/home">Home</Link>
-                    <Link className="nav-item nav-link active" to="/features">Features</Link>
-                    <Link className="nav-item nav-link active" to="/counter">Counter</Link>
-                    <Link className="nav-item nav-link active" to="/user">User</Link>
-                    <Link className="nav-item nav-link active" to="/entryForm">Form Validation</Link>
-                    <a className="nav-item nav-link disabled" href="!#" aria-disabled="true">Disabled</a>
+                    <Link className="nav-item nav-link active menu-item" to="/home">Home</Link>
+                    <Link className="nav-item nav-link active menu-item" to="/features">Features</Link>
+                    <Link className="nav-item nav-link active menu-item" to="/counter">Counter</Link>
+                    <Link className="nav-item nav-link active menu-item" to="/user">User</Link>
+                    <Link className="nav-item nav-link active menu-item" to="/entryForm">Form Validation</Link>
+                    <a className="nav-item nav-link disabled menu-item" href="!#" aria-disabled="true">Disabled</a>
                 </div>
             </div>
         </nav>

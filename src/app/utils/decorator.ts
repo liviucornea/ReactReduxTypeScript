@@ -1,5 +1,5 @@
 // you can run this file in terminal using: tsc decorator.ts &&  node decorator.js
-
+// this is a proof of DECORATOR design pattern and NOT decorator feature in Typescript
 // @ts-ignore
 abstract class Car {
     public description: string | undefined ;
