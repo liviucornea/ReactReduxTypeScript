@@ -1,14 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import style from './ToDoMain.module.scss';
 import {useHistory} from "react-router";
+import {useDispatch} from "react-redux";
+import{ loadToDos} from './todosSlice';
+import {loadCurrentTODO} from './currentToDoSlice';
 
 export function ToDoMain() {
     let mainClass = ['container ' + style.mainDiv].join(' ');
     const [loadedToDos, setLoadedToDos] = useState<any[]>([]);
     const [isLoading, setIsLoading] = useState(false);
+    const dispatch = useDispatch();
     let history = useHistory();
     const setCurrentTODO = (todo: any ) => {
         console.log('Selected TOD', todo);
+        dispatch(loadCurrentTODO(todo));
         history.push("/home");
     }
     useEffect(() => {
@@ -22,6 +27,7 @@ export function ToDoMain() {
             })
                 .then(toDosData => {
                     setIsLoading(true);
+                    dispatch(loadToDos(toDosData));
                     console.log('TODOS list is loaded:', toDosData.slice(0, 100) );
                     /// load them even slower as they come fast from network
                     setTimeout(() =>  setLoadedToDos(toDosData.slice(0, 100)), 2000);
