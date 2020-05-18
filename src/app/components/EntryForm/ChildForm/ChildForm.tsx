@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 type Props = { name: string
                 sendToHost: (name: string ) => void }
 
-export function ParentForm(props: Props) {
+export function ChildForm(props: Props) {
     let mainCssClass= 'container';
     const nameEl = useRef<HTMLInputElement>(null);
 
@@ -11,7 +11,7 @@ export function ParentForm(props: Props) {
         props.sendToHost(nameEl.current?.value ? nameEl.current?.value : '' );
     }
     return (<div className={mainCssClass}>
-        <div><span>Parent Form</span></div>
+        <div><span>Child Form</span></div>
         <div>
             <label> Name is</label><input ref={nameEl} defaultValue={props.name}/>
         </div>

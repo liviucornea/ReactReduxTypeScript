@@ -14,10 +14,11 @@ export default function AppMenu() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <Link className="nav-item nav-link active menu-item" to="/home">Home</Link>
-                    <Link className="nav-item nav-link active menu-item" to="/features">Features</Link>
+                    <Link className="nav-item nav-link active menu-item" to="/feature">Feature</Link>
                     <Link className="nav-item nav-link active menu-item" to="/counter">Counter</Link>
                     <Link className="nav-item nav-link active menu-item" to="/user">User</Link>
                     <Link className="nav-item nav-link active menu-item" to="/entryForm">Form Validation</Link>
+                    <Link className="nav-item nav-link active menu-item" to="/todos">To Do</Link>
                     <a className="nav-item nav-link disabled menu-item" href="!#" aria-disabled="true">Disabled</a>
                 </div>
             </div>

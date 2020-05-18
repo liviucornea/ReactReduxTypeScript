@@ -13,6 +13,7 @@ import {User} from "./features/user/User";
 import {Footer} from "./app/components/footer/Footer";
 import {Feature} from "./app/components/feature/Feature";
 import {EntryForm} from "./app/components/EntryForm/EntryForm";
+import {ToDoMain} from "./features/todo/ToDoMain";
 
 
 ReactDOM.render(
@@ -29,14 +30,17 @@ ReactDOM.render(
                 <Route path="/counter">
                     <Counter />
                 </Route>
-                <Route path="/features">
+                <Route path="/feature">
                     <Feature />
                 </Route>
                 <Route path="/user">
                     <User />
                 </Route>
                 <Route path="/entryForm">
-                    <EntryForm formName='Liviu Cornea' />
+                    <EntryForm formName='Entry Form' />
+                </Route>
+                <Route path="/todos">
+                    <ToDoMain />
                 </Route>
             </Switch>
             <Footer />
