@@ -9,3 +9,9 @@ Footer.tsx that has an footer.module.css file for css purpose.
 AppMenu.tsx that has _app-menu.scss file imported
 See this fis file :
 .....\node_modules\react-scripts\lib\react-app.d.ts 
+
+
+# Router in react :
+1. use attributes like exact OR strict to control routing ( see example in index.tsx where are defined the rotes for app)
+2. To navigate while on diferent components, to diferent routes you can use 
+Link or NavLink

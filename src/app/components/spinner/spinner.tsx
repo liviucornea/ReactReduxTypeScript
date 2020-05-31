@@ -9,7 +9,7 @@ export function Spinner() {
     let context = <div className="spinner-main">
         <div className="loader"></div>
     </div>
-    if (!SpinnerState.isRunning || SpinnerState.reasonsToRun.length == 0) {
+    if (!SpinnerState.isRunning || SpinnerState.reasonsToRun.length === 0) {
         context = <div></div>;
     }
     return (

@@ -27,7 +27,7 @@ ReactDOM.render(
                 <Route path="/home">
                     <Home />
                 </Route>
-                <Route path="/counter">
+                <Route path="/counter" exact strict>
                     <Counter />
                 </Route>
                 <Route path="/feature">
