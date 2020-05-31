@@ -2,52 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {store} from './app/store';
-import {Provider} from 'react-redux';
+import { store } from './app/store';
+import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import {Home} from "./app/components/home/Home";
-import {Counter} from "./features/counter/Counter";
-import {User} from "./features/user/User";
-import {Footer} from "./app/components/footer/Footer";
-import {Feature} from "./app/components/feature/Feature";
-import {EntryForm} from "./app/components/EntryForm/EntryForm";
-import {ToDoMain} from "./features/todo/ToDoMain";
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-        <Router>
-            <App/>
-            {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-            <Switch>
-                <Route path="/home">
-                    <Home />
-                </Route>
-                <Route path="/counter" exact strict>
-                    <Counter />
-                </Route>
-                <Route path="/feature">
-                    <Feature />
-                </Route>
-                <Route path="/user">
-                    <User />
-                </Route>
-                <Route path="/entryForm">
-                    <EntryForm formName='Entry Form' />
-                </Route>
-                <Route path="/todos">
-                    <ToDoMain />
-                </Route>
-            </Switch>
-            <Footer />
-        </Router>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
