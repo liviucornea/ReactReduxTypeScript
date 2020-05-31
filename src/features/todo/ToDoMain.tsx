@@ -31,7 +31,7 @@ export function ToDoMain() {
                 dispatch(loadToDos(toDosData));
                 console.log('TODOS list is loaded:', toDosData.slice(0, 100));
                 /// load them even slower as they come fast from network
-                setTimeout(() => setLoadedToDos(toDosData.slice(0, 100)), 1000);
+                setTimeout(() => setLoadedToDos(toDosData.slice(0, 100)), 100);
             }).catch(err => {
                 console.log('Failed to load todos list ');
                 setIsLoading(false);
