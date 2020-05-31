@@ -3,13 +3,14 @@ import counterReducer from '../features/counter/counterSlice';
 import userReducer from '../features/user/userSlice';
 import currentToDoReducer from '../features/todo/currentToDoSlice';
 import todosReducer from '../features/todo/todosSlice';
-
+import spinnerReducer from './components/spinner/spinnerSlice'
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-      user: userReducer,
-      currentToDo: currentToDoReducer,
-      todos: todosReducer
+    user: userReducer,
+    currentToDo: currentToDoReducer,
+    todos: todosReducer,
+    spinner: spinnerReducer
   },
 });
 

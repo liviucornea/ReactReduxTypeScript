@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
 import { loadToDos } from './todosSlice';
 import { loadCurrentTODO } from './currentToDoSlice';
-import { Spinner } from '../../app/components/spinner/spinner';
+import { startSpinner, SpinnerAction, stopSpinner } from '../../app/components/spinner/spinnerSlice';
 
 export function ToDoMain() {
     let mainClass = ['container ' + style.mainDiv].join(' ');
@@ -19,6 +19,7 @@ export function ToDoMain() {
     }
     useEffect(() => {
         setIsLoading(true);
+        dispatch(startSpinner(new SpinnerAction('LOAD_TODS')));
         console.log('Started to load TODOs list');
         fetch('https://jsonplaceholder.typicode.com/todos').then(response => {
             if (!response.ok) {
@@ -31,14 +32,18 @@ export function ToDoMain() {
                 dispatch(loadToDos(toDosData));
                 console.log('TODOS list is loaded:', toDosData.slice(0, 100));
                 /// load them even slower as they come fast from network
-                setTimeout(() => setLoadedToDos(toDosData.slice(0, 100)), 100);
+                setTimeout(() => {
+                    setLoadedToDos(toDosData.slice(0, 100));
+                    dispatch(stopSpinner(new SpinnerAction('LOAD_TODS')));
+                }, 500);
+
             }).catch(err => {
                 console.log('Failed to load todos list ');
                 setIsLoading(false);
             })
     },
         []);
-    let content = <div><Spinner /></div>;
+    let content = <div>Data is Loading</div>;
     if (isLoading && loadedToDos.length > 0) {
         content = (<div className={mainClass}>
             <div>
