@@ -17,8 +17,9 @@ function App() {
     const user = useSelector(selectUser);
     const navigateToCounter = () => {
         if (user.loggedIn) {
-            return <User />
+            return <Counter />
         } else {
+            window.alert('You are not logged in');
             console.log('Your are not logged in yet to access counter');
         }
     }
