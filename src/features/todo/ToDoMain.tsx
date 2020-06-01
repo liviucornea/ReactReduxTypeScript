@@ -4,7 +4,8 @@ import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
 import { loadToDos } from './todosSlice';
 import { loadCurrentTODO } from './currentToDoSlice';
-import { startSpinner, SpinnerAction, stopSpinner } from '../../app/components/spinner/spinnerSlice';
+import { startSpinner, stopSpinner } from '../../app/components/spinner/spinnerSlice';
+import { loadMessage } from '../../app/components/message-collector/mesagesSlice';
 
 export function ToDoMain() {
     let mainClass = ['container ' + style.mainDiv].join(' ');
@@ -12,6 +13,7 @@ export function ToDoMain() {
     const [isLoading, setIsLoading] = useState(false);
     const dispatch = useDispatch();
     let history = useHistory();
+    dispatch(loadMessage({msgType: 'SUCCESS', msgText: 'TODOs list visited'}));
     const setCurrentTODO = (todo: any) => {
         console.log('Selected TOD', todo);
         dispatch(loadCurrentTODO(todo));

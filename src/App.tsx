@@ -12,6 +12,7 @@ import { EntryForm } from './app/components/EntryForm/EntryForm';
 import { ToDoMain } from './features/todo/ToDoMain';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/user/userSlice';
+import MessageCollector from "./app/components/message-collector/message-collector";
 
 function App() {
     const user = useSelector(selectUser);
@@ -25,6 +26,7 @@ function App() {
     }
     return (
         <React.Fragment>
+            <MessageCollector />
             <Spinner />
             <Router>
                 <header className="App-header">

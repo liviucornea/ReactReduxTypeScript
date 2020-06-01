@@ -3,9 +3,11 @@ import {useDispatch, useSelector} from "react-redux";
 import {logIn, selectUser} from "./userSlice";
 import { useHistory } from "react-router-dom";
 import {UserModel} from "../models/UserModel";
+import {loadMessage} from "../../app/components/message-collector/mesagesSlice";
 
 export function User() {
     const dispatch = useDispatch();
+    dispatch(loadMessage({msgType: 'SUCCESS', msgText: 'User component is visited'}));
     let history = useHistory();
     const user = useSelector(selectUser);
     const firstNameEl = useRef<HTMLInputElement>(null);
