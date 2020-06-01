@@ -9,3 +9,7 @@ Footer.tsx that has an footer.module.css file for css purpose.
 AppMenu.tsx that has _app-menu.scss file imported
 See this fis file :
 .....\node_modules\react-scripts\lib\react-app.d.ts 
+
+3. when not all .tsx files are debuggable in chrome, you need to run debugReactApp 
+in webstorm and than it will start to work...strange...even sourceMap is set to true
+in tsconfig....
