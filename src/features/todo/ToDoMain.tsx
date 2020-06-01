@@ -19,7 +19,7 @@ export function ToDoMain() {
     }
     useEffect(() => {
         setIsLoading(true);
-        dispatch(startSpinner(new SpinnerAction('LOAD_TODS')));
+        dispatch(startSpinner({ reasonToRun: 'LOAD_TODS' }));
         console.log('Started to load TODOs list');
         fetch('https://jsonplaceholder.typicode.com/todos').then(response => {
             if (!response.ok) {
@@ -34,7 +34,7 @@ export function ToDoMain() {
                 /// load them even slower as they come fast from network
                 setTimeout(() => {
                     setLoadedToDos(toDosData.slice(0, 100));
-                    dispatch(stopSpinner(new SpinnerAction('LOAD_TODS')));
+                    dispatch(stopSpinner({ reasonToRun: 'LOAD_TODS' }));
                 }, 500);
 
             }).catch(err => {
