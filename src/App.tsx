@@ -13,6 +13,7 @@ import { ToDoMain } from './features/todo/ToDoMain';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/user/userSlice';
 import MessageCollector from "./app/components/message-collector/message-collector";
+import TopicsMain from "./app/components/topics/topics-main/topics-main";
 
 function App() {
     const user = useSelector(selectUser);
@@ -50,6 +51,9 @@ function App() {
                     </Route>
                     <Route path="/todos">
                         <ToDoMain />
+                    </Route>
+                    <Route path="/topics">
+                        <TopicsMain />
                     </Route>
                 </Switch>
             </Router>
