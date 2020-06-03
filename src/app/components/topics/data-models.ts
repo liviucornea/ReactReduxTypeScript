@@ -34,12 +34,12 @@ export const TopicsList: ITopic[] = [{
     resources: [{
         name: 'React lifecycle events',
         id: 'react-events',
-        description: 'Reactl lifecycle events allow you to control data loading an release unnecesary resources',
+        description: 'React lifecycle events allow you to control data loading an release unnecesary resources',
         url: 'https://www.reactjs.org'
     }, {
         name: 'React AHA Moments',
         id: 'react-aha-moments',
-        description: '',
+        description: 'React AHA Moments',
         url: 'https://www.reactjs.org'
     }],
 },
@@ -47,14 +47,14 @@ export const TopicsList: ITopic[] = [{
         id: 'functional-programing',
         description: 'Declarative component base router',
         resources: [{
-            name: '',
-            id: '',
-            description: '',
+            name: 'Imperative vs Declarative programing',
+            id: 'imperative-declarative',
+            description: 'A guide to understand functional programing paradigm',
             url: 'https://www.reactjs.org'
         }, {
-            name: '',
-            id: '',
-            description: '',
+            name: 'Build user interface with pure functions and function composite',
+            id: 'fn-composite',
+            description: 'A guide building UI with pure functions',
             url: 'https://www.reactjs.org'
         }],
     }];

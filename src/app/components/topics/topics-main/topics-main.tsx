@@ -1,24 +1,27 @@
 import React from 'react';
 import { TopicsList } from'../data-models';
-import {Link, Route} from "react-router-dom";
+import {Link, Route, useRouteMatch} from "react-router-dom";
 import Topic from "../topic/topic";
 
+type Props = {
+    description: string
+}
 
-export default function TopicsMain() {
-
+export default function TopicsMain(input: Props) {
+    let match = useRouteMatch();
     return (<div className={'container'}>
-        <span>Topics:</span>
+        <span>Topics: {input.description} </span>
         <ul>
             {TopicsList.map( (topic, id) => {
               return (
                   <li key={id}>
-                      <Link to={`/topics/${topic.id}` } > {topic.name} </Link>
+                      <Link to={`${match.url}/${topic.id}` } > {topic.name} </Link>
                   </li>
               )
             })}
         </ul>
         <hr />
-        <Route path={`/topics/:topicId` } >
+        <Route path={`${match.path}/:topicId` } >
             <Topic/>
         </Route>
     </div>);

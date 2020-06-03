@@ -53,7 +53,7 @@ function App() {
                         <ToDoMain />
                     </Route>
                     <Route path="/topics">
-                        <TopicsMain />
+                        <TopicsMain description={'My main Topic functional component'} />
                     </Route>
                 </Switch>
             </Router>
