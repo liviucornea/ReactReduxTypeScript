@@ -1,20 +1,25 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './_message-collector.scss';
-import {useSelector} from "react-redux";
-import {selectMessages} from "./mesagesSlice";
+import {useDispatch, useSelector} from "react-redux";
+import {loadMessage, selectMessages} from "./mesagesSlice";
+import {MessageDTO} from "../../../features/models/MesageDTO";
 
 type Props = {}
 
 export default function MessageCollector({}: Props) {
     const messagesState = useSelector(selectMessages);
-
-    // Similar to componentDidMount and componentDidUnmount:
+    const dispatch = useDispatch();
+     const [liviuName, setLiviuName] = useState('Liviu');
     useEffect(() => {
-        console.log(' Equivalent of component did mount');
+        setLiviuName(liviuName + ' Cornea');
+        console.log('Message collector: messageState has changed');
         return () => {
-            console.log(' Equivalent of component will unmount');
+            console.log('Message collector: messageState will change');
         }
     }, [messagesState]);
+    const updateMsg = () => {
+        dispatch(loadMessage({msgType: 'SUCCESS', msgText: messagesState.list[0].msgText + '  Hellooo!!!'}));
+    };
     let context = <div></div>;
     if(messagesState.list.length === 0) {
         return context;
@@ -26,13 +31,15 @@ export default function MessageCollector({}: Props) {
                     <div className="notification-content">
                         {messagesState.list.map(message => {
                             return (
-                                <p> {message.msgText}</p>
+                                <p key={message.msgText}> {message.msgText}</p>
                             );
                         })}
                     </div>
                 </div>
+                {/*<span>Livius name is:  {liviuName}</span>*/}
             </div>
         </div>
+        <button onClick={updateMsg}>Update Message</button>
     </section>);
 
     return context;

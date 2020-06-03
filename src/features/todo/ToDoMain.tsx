@@ -13,12 +13,14 @@ export function ToDoMain() {
     const [isLoading, setIsLoading] = useState(false);
     const dispatch = useDispatch();
     let history = useHistory();
-    dispatch(loadMessage({msgType: 'SUCCESS', msgText: 'TODOs list visited'}));
+    useEffect(() => {
+        dispatch(loadMessage({msgType: 'SUCCESS', msgText: 'TODOs list visited'}));
+    }, []);
     const setCurrentTODO = (todo: any) => {
         console.log('Selected TOD', todo);
         dispatch(loadCurrentTODO(todo));
         history.push("/home");
-    }
+    };
     useEffect(() => {
         setIsLoading(true);
         dispatch(startSpinner({ reasonToRun: 'LOAD_TODS' }));

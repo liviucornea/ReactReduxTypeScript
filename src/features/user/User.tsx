@@ -1,4 +1,4 @@
-import React , { useRef }  from 'react';
+import React, {useEffect, useRef} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {logIn, selectUser} from "./userSlice";
 import { useHistory } from "react-router-dom";
@@ -7,9 +7,13 @@ import {loadMessage} from "../../app/components/message-collector/mesagesSlice";
 
 export function User() {
     const dispatch = useDispatch();
-    dispatch(loadMessage({msgType: 'SUCCESS', msgText: 'User component is visited'}));
     let history = useHistory();
     const user = useSelector(selectUser);
+    // NOTE that you have to update different component ( in this case Message collector using useEffects
+    // if you don't put code  dispatch(loadMessage.....; inside of use effects block you will have an error in console
+    useEffect(() => {
+          dispatch(loadMessage({msgType: 'SUCCESS', msgText: 'User component is visited'}));
+    }, []);
     const firstNameEl = useRef<HTMLInputElement>(null);
     const lastNameEl = useRef<HTMLInputElement>(null);
     const passwordEl = useRef<HTMLInputElement>(null);
