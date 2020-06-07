@@ -14,6 +14,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from './features/user/userSlice';
 import MessageCollector from "./app/components/message-collector/message-collector";
 import TopicsMain from "./app/components/topics/topics-main/topics-main";
+import NotFound from './app/components/not-found/NotFound';
 
 function App() {
     const user = useSelector(selectUser);
@@ -54,6 +55,9 @@ function App() {
                     </Route>
                     <Route path="/topics">
                         <TopicsMain description={'My main Topic functional component'} />
+                    </Route>
+                    <Route path="/:aiurea">
+                        <NotFound />
                     </Route>
                 </Switch>
             </Router>
