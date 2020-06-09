@@ -3,7 +3,7 @@ import Calculator from "./Calculator/Calculator";
 
 export function Feature() {
 
-    // Similar to componentDidMount and componentDidUnmount:
+    // NOTE:  Similar to componentDidMount and componentDidUnmount:
     useEffect(() => {
         console.log(' Equivalent of component did mount');
         return () => {

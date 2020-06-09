@@ -15,6 +15,7 @@ import { selectUser } from './features/user/userSlice';
 import MessageCollector from "./app/components/message-collector/message-collector";
 import TopicsMain from "./app/components/topics/topics-main/topics-main";
 import NotFound from './app/components/not-found/NotFound';
+import TodoEdit from "./features/todo/todo-edit/todo-edit";
 
 function App() {
     const user = useSelector(selectUser);
@@ -52,6 +53,9 @@ function App() {
                     </Route>
                     <Route path="/todos">
                         <ToDoMain />
+                    </Route>
+                    <Route path="/todo/:id">
+                        <TodoEdit />
                     </Route>
                     <Route path="/topics">
                         <TopicsMain description={'My main Topic functional component'} />
