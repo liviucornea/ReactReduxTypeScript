@@ -9,6 +9,11 @@ type Props = {}
 export default function Topic({ }: Props) {
     // NOTE useRouteMatch example below
     // and understand the match.url and match.path
+    /*
+    path - (string) The path pattern used to match. Useful for building nested <Route>s
+url - (string) The matched portion of the URL. Useful for building nested <Link>s
+Consider the route "/users/:userId". match.path would be "/users/:userId" while match.url would have the :userId value filled in, e.g. "users/5".
+     */
     let match = useRouteMatch();
     let topic = TopicsList.find(topic => {
         // @ts-ignore
