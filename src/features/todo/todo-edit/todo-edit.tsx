@@ -3,21 +3,17 @@ import {useSelector} from "react-redux";
 import {selectCurentToDo} from "../currentToDoSlice";
 import {useHttp} from "../../../app/hooks/useHttp";
 import {ToDoModel} from "../../models/ToDoModel";
-import {useRouteMatch} from "react-router";
-
-
-type Props = {}
-
-export default function TodoEdit({}: Props) {
+import {useParams} from "react-router";
+interface RouteParams {
+    id: string
+}
+export default function TodoEdit() {
     // we could get it from store , commented here or get details from an endpoint as lines below
     // const toDo = useSelector(selectCurentToDo);
-    let routerInfo = useRouteMatch();
+    const params = useParams<RouteParams>();
     let url = 'https://jsonplaceholder.typicode.com/todos';
-    // @ts-ignore
-    if (routerInfo.params && routerInfo.params.id) {
-       // @ts-ignore
-        url = url +  '/' + routerInfo.params.id;
-    }
+    url = url +  '/' +  params.id;
+
     const [isLoading, fetchedData] = useHttp(url , 'GET',  []);
     let content: any;
     let toDo = fetchedData ? fetchedData as unknown as ToDoModel : null;
