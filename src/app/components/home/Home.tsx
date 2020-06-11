@@ -9,7 +9,7 @@ import {ChildHome} from "./childHome/childHome";
 export function Home() {
     let mainClass = [styles.mainHome + ' container'].join(' ');
     const dispatch = useDispatch();
-    const [message, dispatchMessage] = useReducer(homeReducer, initialMessage);
+    const [message, dispatchHomeMessage] = useReducer(homeReducer, initialMessage);
     // NOTE that you have to update different component ( in this case Message collector using useEffects
     // if you don't put code  dispatch( emptyOutMessages(true)); inside of use effects block you will have an error in console
     useEffect(() => {
@@ -17,7 +17,7 @@ export function Home() {
     }, []);
 
     return(
-        <HomeContext.Provider value={{homeMsgState: message , homeMsgDispatch: dispatchMessage}}>
+        <HomeContext.Provider value={{homeMsgState: message , homeMsgDispatch: dispatchHomeMessage}}>
         <div className={mainClass}>
         <div>
             <span>Home component content</span></div>
