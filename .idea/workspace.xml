@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7859b145-84df-4cd8-947c-36f1f2b0305a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/components/home/childHome/_childHome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/home/childHome/childHome.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/home/childHome/childHome.spec.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/home/childHome/childHome.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/home/homeContext.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/app-menu/app-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/app-menu/app-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/topics/resource/_resource.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/topics/resource/_resource.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/topics/resource/resource.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/topics/resource/resource.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useHttp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useHttp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/todo/todo-edit/todo-edit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todo/todo-edit/todo-edit.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,13 +25,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/hooks/useHttp.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/features/todo/todo-edit/todo-edit.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="100">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/spinner/spinnerSlice.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -48,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/features/todo/ToDoMain.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1004">
-              <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+            <state relative-caret-position="405">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="63" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -60,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/home/Home.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            <state relative-caret-position="323">
+              <caret line="19" column="98" selection-start-line="19" selection-start-column="98" selection-end-line="19" selection-end-column="98" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -70,62 +79,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/EntryForm/EntryForm.tsx">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/EntryForm/ChildForm/ChildForm.tsx">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/home/childHome/childHome.tsx">
+        <entry file="file://$PROJECT_DIR$/src/app/components/feature/Feature.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="85">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="11" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/feature/Calculator/Calculator.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/feature/TemperatureInput/BoilingVerdict/BoilingVerdict.tsx">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/feature/TemperatureInput/TemperatureInput.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/home/homeContext.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="384" column="13" selection-start-line="384" selection-start-column="13" selection-end-line="384" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/features/todo/todo-edit/_todo-edit.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -142,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>source-map</find>
       <find>useSt</find>
       <find>compileOnSave</find>
       <find>lodash</find>
@@ -172,6 +165,7 @@
       <find>useContext</find>
       <find>menu-item</find>
       <find>NOTE</find>
+      <find>Sending http request to</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -221,16 +215,16 @@
         <option value="$PROJECT_DIR$/src/features/todo/todo-edit/_todo-edit.scss" />
         <option value="$PROJECT_DIR$/src/features/todo/ToDoMain.module.scss" />
         <option value="$PROJECT_DIR$/src/features/todo/ToDoMain.tsx" />
-        <option value="$PROJECT_DIR$/src/app/hooks/useHttp.ts" />
         <option value="$PROJECT_DIR$/src/app/components/topics/topic/topic.tsx" />
         <option value="$PROJECT_DIR$/src/App.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/app-menu/app-menu.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/topics/resource/_resource.scss" />
-        <option value="$PROJECT_DIR$/src/features/todo/todo-edit/todo-edit.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/topics/resource/resource.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/home/childHome/childHome.tsx" />
-        <option value="$PROJECT_DIR$/src/app/components/home/Home.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/home/homeContext.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/home/Home.tsx" />
+        <option value="$PROJECT_DIR$/src/app/hooks/useHttp.ts" />
+        <option value="$PROJECT_DIR$/src/features/todo/todo-edit/todo-edit.tsx" />
       </list>
     </option>
   </component>
@@ -330,6 +324,42 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="feature" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="full-react-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="full-react-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="feature" type="462c0819:PsiDirectoryNode" />
+              <item name="Calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="full-react-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="full-react-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="feature" type="462c0819:PsiDirectoryNode" />
+              <item name="TemperatureInput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="full-react-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="full-react-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="feature" type="462c0819:PsiDirectoryNode" />
+              <item name="TemperatureInput" type="462c0819:PsiDirectoryNode" />
+              <item name="BoilingVerdict" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="full-react-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="full-react-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,6 +378,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="message-collector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="full-react-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="full-react-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="spinner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="full-react-app" type="b2602c69:ProjectViewProjectNode" />
@@ -526,12 +564,12 @@
       <workItem from="1591623503563" duration="23285000" />
       <workItem from="1591733019779" duration="1726000" />
       <workItem from="1591793563993" duration="639000" />
-      <workItem from="1591882758999" duration="9497000" />
+      <workItem from="1591882758999" duration="11868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140813000" />
+    <option name="totallyTimeSpent" value="143184000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,25 +581,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1272" y="-48" width="1936" height="1056" extended-state="7" />
+    <frame x="1272" y="-48" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75915223" visible="true" weight="0.18545838" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7594502" visible="true" weight="0.14436248" />
       <window_info id="Structure" order="1" sideWeight="0.3545611" side_tool="true" weight="0.22893482" />
-      <window_info id="npm" order="2" sideWeight="0.24084778" side_tool="true" visible="true" weight="0.18545838" />
+      <window_info id="npm" order="2" sideWeight="0.24054983" side_tool="true" visible="true" weight="0.14436248" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4370933" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4370933" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37960956" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.36876357" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.36876357" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.31995663" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35357916" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33188722" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -598,30 +636,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/message-collector/message-collector.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/store.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/spinner/spinnerSlice.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/spinner/spinner.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -685,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/feature/TemperatureInput/TemperatureInput.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/topics/topics-main/topics-main.spec.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -746,23 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/hooks/useHttp.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/feature/Feature.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,42 +878,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/todo/ToDoMain.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1004">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/home/childHome/childHome.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/todo/todo-edit/todo-edit.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/home/Home.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -935,10 +895,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/feature/Feature.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/feature/TemperatureInput/BoilingVerdict/BoilingVerdict.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/feature/TemperatureInput/TemperatureInput.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/feature/Calculator/Calculator.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/home/homeContext.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/home/Home.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="98" selection-start-line="19" selection-start-column="98" selection-end-line="19" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/spinner/spinnerSlice.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/hooks/useHttp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/todo/ToDoMain.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/todo/todo-edit/todo-edit.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

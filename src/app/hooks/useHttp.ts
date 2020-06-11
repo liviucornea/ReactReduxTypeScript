@@ -10,7 +10,7 @@ export const useHttp = (url: string, method:string, dependencies: any) =>{
 
     useEffect(() => {
         setIsLoading(true);
-        console.log('Sending http request to url' + url);
+        console.log('Sending http request to url: ' + url);
         fetch(url,
             {
                 method: method,
