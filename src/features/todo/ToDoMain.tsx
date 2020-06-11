@@ -29,7 +29,8 @@ export function ToDoMain() {
             setIsLoading(true);
             dispatch(startSpinner({reasonToRun: 'LOAD_TODS'}));
             console.log('Started to load TODOs list');
-            fetch('https://jsonplaceholder.typicode.com/todos').then(response => {
+            //  fetch('https://jsonplaceholder.typicode.com/todos').then(response => {
+            fetch('http://localhost:9000/todos').then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to load tods')
                 }

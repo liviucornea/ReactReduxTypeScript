@@ -16,9 +16,12 @@ export default function TodoEdit() {
     // const toDo = useSelector(selectCurentToDo);
     const params = useParams<RouteParams>();
     const dispatch = useDispatch()
-    let url = 'https://jsonplaceholder.typicode.com/todos';
-    url = url +  '/' +  params.id;
-    const [isLoading, fetchedData] = useHttp(url , 'GET',  []);
+    // let url = 'https://jsonplaceholder.typicode.com/todos';
+    // please not tha local NODE js server has response structure a bit different than that public api for to do details
+    let url = 'http://localhost:9000/todo/';
+
+    url = url +  params.id;
+    const [isLoading, fetchedData] = useHttp<{todo: ToDoModel}>(url , 'GET',  []);
     useEffect(() => {
         if (isLoading) {
             dispatch(startSpinner({reasonToRun: 'LOAD_TODO'}));
@@ -29,7 +32,9 @@ export default function TodoEdit() {
 
     // have content to return
     let content: any;
-    let toDo = fetchedData ? fetchedData as unknown as ToDoModel : null;
+
+    // @ts-ignore
+    let toDo =  fetchedData ?  fetchedData.todo : null;
     content =  (<div className="container todo-edit">
         <h2>TO do info bellow</h2>
         <div>

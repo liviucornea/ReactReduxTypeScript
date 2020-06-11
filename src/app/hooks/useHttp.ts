@@ -4,7 +4,7 @@ this is a custom http hook that can be used across functional components in Reac
 it accepts url like parameters and dependencies 'to know' when to be extecuted. For that purpose, internaly
 it is using useEffect from React
  */
-export const useHttp = (url: string, method:string, dependencies: any) =>{
+export const useHttp = <T>(url: string, method:string, dependencies: any)=>{
     const [isLoading, setIsLoading] = useState(false);
     const [fetchedData, setFetchedData] =  useState(null);
 
@@ -33,5 +33,5 @@ export const useHttp = (url: string, method:string, dependencies: any) =>{
             setIsLoading(false);
         })
     }, dependencies);
-    return [isLoading, fetchedData];
+    return [isLoading, fetchedData as T | null];
 }
