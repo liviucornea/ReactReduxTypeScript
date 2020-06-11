@@ -4,6 +4,8 @@ import {selectCurentToDo} from "../currentToDoSlice";
 import {useHttp} from "../../../app/hooks/useHttp";
 import {ToDoModel} from "../../models/ToDoModel";
 import {useParams} from "react-router";
+import './_todo-edit.scss';
+
 interface RouteParams {
     id: string
 }

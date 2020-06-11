@@ -19,6 +19,7 @@ import TodoEdit from "./features/todo/todo-edit/todo-edit";
 
 function App() {
     const user = useSelector(selectUser);
+    // NOTE  example of route guard navigation bellow
     const navigateToCounter = () => {
         if (user.loggedIn) {
             return <Counter />
