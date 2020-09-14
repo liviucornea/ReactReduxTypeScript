@@ -1,11 +1,16 @@
 import React from 'react'
 import styles from './Footer.module.css'
+import TriangleCss from '../triangle-css/triangle-css';
 
 
 
 export function Footer() {
     let mainClass = [styles.mainFooter + ' container'].join(' ');
     return (<div className={mainClass}>
+        <hr />
+        <div>
+            <TriangleCss />
+        </div>
         <span>Learn </span>
         <a className="App-link"
            href="https://reactjs.org/"
