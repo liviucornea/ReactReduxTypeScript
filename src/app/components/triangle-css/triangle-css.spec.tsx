@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 import { expect } from 'chai';
 import TriangleCss from './triangle-css';
 

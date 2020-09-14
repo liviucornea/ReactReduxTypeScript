@@ -28,13 +28,17 @@ export default function AppMenu() {
                         <NavLink className="nav-item nav-link active menu-item" to="/entryForm"
                                  exact activeStyle={{color: 'blue'}}
                         >Form Validation</NavLink>
-                        <Link className="nav-item nav-link active menu-item" to="/todos">To do</Link>
+                        {/*<Link className="nav-item nav-link active menu-item" to="/todos" >To do</Link>*/}
+                        <NavLink className="nav-item nav-link active menu-item" to="/todos"  exact activeStyle={{color: 'green'}} >To do</NavLink>
                         <NavLink className="nav-item nav-link active menu-item" to="/topics"
                                  exact activeStyle={{color: 'green'}}
                         >Nested Routes</NavLink>
                         <NavLink className="nav-item nav-link active menu-item" to="/aiurea"
                                  exact activeStyle={{color: 'green'}}
                         >Aiurea</NavLink>
+                        <NavLink className="nav-item nav-link active menu-item" to="/flipCard"
+                                 exact activeStyle={{color: 'green'}}
+                        >Flip Card</NavLink>
                         {/* <a className="nav-item nav-link disabled menu-item" href="!#" aria-disabled="true">Disabled</a>*/}
                     </div>
                 </div>
