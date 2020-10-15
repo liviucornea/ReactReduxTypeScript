@@ -9,6 +9,7 @@ type Props = {
 export default function FlipCardFigure(props: Props) {
     return (
         <div className="container">
+            <span>This is a Flip Card component. Please do a mouse over</span>
             <div className="card-container">
                 <div className="card">
                     <figure className="front">
