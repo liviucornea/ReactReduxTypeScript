@@ -1,6 +1,5 @@
 import React ,{useEffect} from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {selectCurentToDo} from "../currentToDoSlice";
+import {useDispatch} from "react-redux";
 import {useHttp} from "../../../app/hooks/useHttp";
 import {ToDoModel} from "../../models/ToDoModel";
 import {useParams} from "react-router";
@@ -28,6 +27,7 @@ export default function TodoEdit() {
         }else{
             dispatch(stopSpinner({reasonToRun: 'LOAD_TODO'}));
         }
+        // eslint-disable-next-line 
     }, [isLoading]);
 
     // have content to return

@@ -4,8 +4,9 @@ import { TopicsList } from "../data-models";
 import { Link } from "react-router-dom";
 import Resource from "../resource/resource";
 
-type Props = {}
 
+type Props = {}
+// eslint-disable-next-line 
 export default function Topic({ }: Props) {
     // NOTE useRouteMatch example below
     // and understand the match.url and match.path

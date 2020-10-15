@@ -1,11 +1,8 @@
 import React from 'react';
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import './_app-menu.scss';
-import {useSelector} from "react-redux";
-import {selectUser} from "../../../features/user/userSlice";
 
 export default function AppMenu() {
-    const user = useSelector(selectUser);
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">

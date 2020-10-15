@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import AppMenu from "./app/components/app-menu/app-menu";
 import { Spinner } from './app/components/spinner/spinner';

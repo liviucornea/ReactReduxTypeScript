@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import './_message-collector.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {loadMessage, selectMessages} from "./mesagesSlice";
-import {MessageDTO} from "../../../features/models/MesageDTO";
+
 
 type Props = {}
-
+// eslint-disable-next-line 
 export default function MessageCollector({}: Props) {
     const messagesState = useSelector(selectMessages);
     const dispatch = useDispatch();
@@ -16,6 +16,7 @@ export default function MessageCollector({}: Props) {
         return () => {
             console.log('Message collector: messageState will change');
         }
+        // eslint-disable-next-line 
     }, [messagesState]);
     const updateMsg = () => {
         dispatch(loadMessage({msgType: 'SUCCESS', msgText: messagesState.list[0].msgText + '  Hellooo!!!'}));

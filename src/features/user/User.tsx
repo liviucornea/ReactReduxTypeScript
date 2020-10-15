@@ -13,6 +13,7 @@ export function User() {
     // if you don't put code  dispatch(loadMessage.....; inside of use effects block you will have an error in console
     useEffect(() => {
           dispatch(loadMessage({msgType: 'SUCCESS', msgText: 'User component is visited'}));
+          // eslint-disable-next-line 
     }, []);
     const firstNameEl = useRef<HTMLInputElement>(null);
     const lastNameEl = useRef<HTMLInputElement>(null);

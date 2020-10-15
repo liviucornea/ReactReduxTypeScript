@@ -5,6 +5,7 @@ import   './_resource.scss';
 
 type Props = {}
 
+// eslint-disable-next-line 
 export default function Resource({}: Props) {
     let match = useRouteMatch();
     let topic = TopicsList.find(topic => {

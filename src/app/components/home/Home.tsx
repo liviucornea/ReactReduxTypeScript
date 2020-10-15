@@ -1,6 +1,6 @@
 import React, {useEffect, useReducer} from 'react'
 import styles from './Home.module.css';
-import {emptyOutMessages, loadMessage} from "../message-collector/mesagesSlice";
+import {emptyOutMessages} from "../message-collector/mesagesSlice";
 import {useDispatch} from "react-redux";
 import {HomeContext, homeReducer, initialMessage} from "./homeContext";
 import {ChildHome} from "./childHome/childHome";
@@ -14,6 +14,7 @@ export function Home() {
     // if you don't put code  dispatch( emptyOutMessages(true)); inside of use effects block you will have an error in console
     useEffect(() => {
         dispatch( emptyOutMessages(true));
+        // eslint-disable-next-line 
     }, []);
 
     return(

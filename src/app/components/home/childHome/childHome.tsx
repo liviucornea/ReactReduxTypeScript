@@ -3,7 +3,7 @@ import {HomeContext} from "../homeContext";
 
 
 type Props = {}
-
+// eslint-disable-next-line 
 export  const ChildHome = ({}: Props) =>  {
     const homeContext = useContext(HomeContext);
     return (<div className="childHome">

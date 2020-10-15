@@ -20,6 +20,7 @@ export function ToDoMain() {
             dispatch(emptyOutMessages(true));
             console.log(' TODDO Main component is detroyed/unmount');
         }
+        // eslint-disable-next-line 
     }, []);
     const setCurrentTODO = (todo: any) => {
         console.log('Selected TOD', todo);
@@ -54,8 +55,8 @@ export function ToDoMain() {
                 dispatch(loadMessage({msgType: 'ERROR', msgText: 'Error trying to load todo  list!!!'}));
                 setContentMsg('Error trying to load the data. Process is aborted');
             })
-        },
-        []);
+        // eslint-disable-next-line 
+        }, []);
     let content = <div>{contentMsg}</div>;
     if (isLoading && loadedToDos.length > 0) {
         content = (<div className={mainClass}>

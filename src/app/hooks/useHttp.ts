@@ -32,6 +32,7 @@ export const useHttp = <T>(url: string, method:string, dependencies: any)=>{
             console.log(err);
             setIsLoading(false);
         })
+        // eslint-disable-next-line 
     }, dependencies);
     return [isLoading, fetchedData as T | null];
 }
