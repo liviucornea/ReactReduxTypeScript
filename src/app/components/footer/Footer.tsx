@@ -11,7 +11,7 @@ export function Footer() {
         <div>
             <TriangleCss />
         </div>
-        <span>Learn </span>
+        <span>Learn React </span>
         <a className="App-link"
            href="https://reactjs.org/"
            target="_blank"
