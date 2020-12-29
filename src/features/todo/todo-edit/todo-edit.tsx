@@ -14,11 +14,10 @@ export default function TodoEdit() {
     // we could get it from store , commented here or get details from an endpoint as lines below
     // const toDo = useSelector(selectCurentToDo);
     const params = useParams<RouteParams>();
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     // let url = 'https://jsonplaceholder.typicode.com/todos';
     // please not tha local NODE js server has response structure a bit different than that public api for to do details
     let url = 'http://localhost:9000/todo/';
-
     url = url +  params.id;
     const [isLoading, fetchedData] = useHttp<{todo: ToDoModel}>(url , 'GET',  []);
     useEffect(() => {

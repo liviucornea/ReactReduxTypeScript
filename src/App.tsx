@@ -3,7 +3,7 @@ import './App.css';
 import AppMenu from "./app/components/app-menu/app-menu";
 import { Spinner } from './app/components/spinner/spinner';
 import { Footer } from './app/components/footer/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './app/components/home/Home';
 import { Counter } from './features/counter/Counter';
 import { Feature } from './app/components/feature/Feature';
@@ -17,6 +17,7 @@ import TopicsMain from "./app/components/topics/topics-main/topics-main";
 import NotFound from './app/components/not-found/NotFound';
 import TodoEdit from "./features/todo/todo-edit/todo-edit";
 import FlipCardFigure from './app/components/flipCardFigure/flipCardFigure';
+import Test from './app/components/test/test';
 
 function App() {
     const user = useSelector(selectUser);
@@ -63,8 +64,16 @@ function App() {
                         <TopicsMain description={'My main Topic functional component'} />
                     </Route>
                     <Route path="/flipCard">
-                        <FlipCardFigure titleFront={'Front card'} titleBack={'Back card'}  />
+                        <FlipCardFigure titleFront={'Front card'} titleBack={'Back card'} />
                     </Route>
+                    {/* Using the `component` prop */}
+                    <Route path="/test/:testparam" component={Test}>
+                    </Route>
+                    {/* Using the `render` prop */}
+                    <Route
+                        path="/posts/:slug"
+                        render={({ match }) => <Test theInput={{ match, second: 'Monica' }} />}
+                    />
                     <Route path="/:aiurea">
                         <NotFound />
                     </Route>
