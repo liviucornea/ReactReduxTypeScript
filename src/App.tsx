@@ -66,13 +66,15 @@ function App() {
                     <Route path="/flipCard">
                         <FlipCardFigure titleFront={'Front card'} titleBack={'Back card'} />
                     </Route>
-                    {/* Using the `component` prop */}
+                    {/* Using the `component` prop
+                    see this url for mor info : https://reacttraining.com/blog/react-router-v5-1/
+                    */}
                     <Route path="/test/:testparam" component={Test}>
                     </Route>
                     {/* Using the `render` prop */}
                     <Route
-                        path="/posts/:slug"
-                        render={({ match }) => <Test theInput={{ match, second: 'Monica' }} />}
+                        path="/posts/:testparam"
+                        render={({ match }) => <Test match={match} second={'Monica'} />}
                     />
                     <Route path="/:aiurea">
                         <NotFound />

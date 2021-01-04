@@ -7,13 +7,13 @@ import './_todo-edit.scss';
 import {startSpinner, stopSpinner} from "../../../app/components/spinner/spinnerSlice";
 
 
-interface RouteParams {
+interface ToDoEditRouteParams {
     id: string
 }
 export default function TodoEdit() {
     // we could get it from store , commented here or get details from an endpoint as lines below
     // const toDo = useSelector(selectCurentToDo);
-    const params = useParams<RouteParams>();
+    const params = useParams<ToDoEditRouteParams>();
     const dispatch = useDispatch();
     // let url = 'https://jsonplaceholder.typicode.com/todos';
     // please not tha local NODE js server has response structure a bit different than that public api for to do details

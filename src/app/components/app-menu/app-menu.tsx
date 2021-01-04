@@ -39,6 +39,9 @@ export default function AppMenu() {
                         <NavLink className="nav-item nav-link active menu-item" to="/test/LiviuCornea"
                             exact activeStyle={{ color: 'green' }}
                         >test</NavLink>
+                        <NavLink className="nav-item nav-link active menu-item" to="/posts/JhonSmith"
+                            exact activeStyle={{ color: 'green' }}
+                        >post</NavLink>
                         
                         {/* <a className="nav-item nav-link disabled menu-item" href="!#" aria-disabled="true">Disabled</a>*/}
                     </div>
